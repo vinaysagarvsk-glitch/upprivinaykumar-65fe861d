@@ -97,7 +97,7 @@ const HeroSection = () => {
                 <img
                   src={profileImage}
                   alt="Uppri Vinay Kumar"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             </div>
