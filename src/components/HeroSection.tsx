@@ -27,24 +27,26 @@ const HeroSection = () => {
               className="text-primary font-medium mb-4"
             >
               Hello, I'm
-            <motion.h1
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.3 }}
-  className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
->
-  SEO Specialist in India – <span className="text-gradient">Uppri Vinay Kumar</span>
-</motion.h1>
+            </motion.p>
             
-            <motion.h2
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.6 }}
-  className="text-lg md:text-xl text-muted-foreground mb-6"
->
-  Digital Marketing & SEO Assistant | BBA Final Year Student
-</motion.h2>
-              
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+            >
+              Uppri{" "}
+              <span className="text-gradient">Vinay Kumar</span>
+            </motion.h1>
+            
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+              className="text-lg md:text-xl text-muted-foreground mb-6"
+            >
+              Digital Marketing & SEO Assistant | BBA Final-Year Student
+            </motion.p>
             
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -91,7 +93,6 @@ const HeroSection = () => {
               {/* Glow effect */}
               <div className="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-20 animate-pulse-glow" />
               
-        
               <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/30 glow">
                 <img
                   src={profileImage}
@@ -99,13 +100,12 @@ const HeroSection = () => {
                   className="w-full h-full object-cover object-top"
                 />
               </div>
-                  </div>
-    </motion.div>
-    </div>
-  </div>
-</section>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
   );
 };
 
 export default HeroSection;
-      
