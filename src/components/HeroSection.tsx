@@ -91,6 +91,7 @@ const HeroSection = () => {
               {/* Glow effect */}
               <div className="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-20 animate-pulse-glow" />
               
+        
               <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/30 glow">
                 <img
                   src={profileImage}
