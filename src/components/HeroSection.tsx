@@ -36,14 +36,15 @@ const HeroSection = () => {
   SEO Specialist in India – <span className="text-gradient">Uppri Vinay Kumar</span>
 </motion.h1>
             
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className="text-lg md:text-xl text-muted-foreground mb-6"
-            >
-              Digital Marketing & SEO Assistant | BBA Final-Year Student
-            </motion.p>
+            <motion.h2
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.6 }}
+  className="text-lg md:text-xl text-muted-foreground mb-6"
+>
+  Digital Marketing & SEO Assistant | BBA Final Year Student
+</motion.h2>
+              
             
             <motion.p
               initial={{ opacity: 0, y: 20 }}
