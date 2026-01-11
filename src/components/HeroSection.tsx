@@ -99,12 +99,13 @@ const HeroSection = () => {
                   className="w-full h-full object-cover object-top"
                 />
               </div>
-            </div>
-          </motion.div>
-        </div>
-      </div>
-    </section>
+                  </div>
+    </motion.div>
+    </div>
+  </div>
+</section>
   );
 };
 
 export default HeroSection;
+      
