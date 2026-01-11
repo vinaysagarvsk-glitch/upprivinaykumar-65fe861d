@@ -27,17 +27,14 @@ const HeroSection = () => {
               className="text-primary font-medium mb-4"
             >
               Hello, I'm
-            </motion.p>
-            
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
-            >
-              Uppri{" "}
-              <span className="text-gradient">Vinay Kumar</span>
-            </motion.h1>
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.3 }}
+  className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+>
+  SEO Specialist in India – <span className="text-gradient">Uppri Vinay Kumar</span>
+</motion.h1>
             
             <motion.p
               initial={{ opacity: 0, y: 20 }}
