@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, Phone, Linkedin, Send, MapPin } from "lucide-react";
+import { Mail, Phone, Linkedin, Send, MapPin, FileText } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from "@emailjs/browser";
 
@@ -75,6 +75,12 @@ const ContactSection = () => {
       value: "Connect with me",
       href: "https://www.linkedin.com/in/uppri-vinay-kumar-5b8952295",
     },
+    {
+  icon: FileText,
+  label: "Resume",
+  value: "Download Resume",
+  href: "/resume/Vinay_Resume.pdf",
+},
   ];
 
   return (
