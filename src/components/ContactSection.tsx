@@ -56,7 +56,8 @@ const ContactSection = () => {
     }
   };
 
-  const contactInfo = [
+  // All contact items (Email, Phone, Resume, LinkedIn) in same style
+  const contactItems = [
     {
       icon: Mail,
       label: "Email",
@@ -69,20 +70,17 @@ const ContactSection = () => {
       value: "+91 7670961884",
       href: "tel:+917670961884",
     },
-  ];
-
-  const actionButtons = [
     {
       icon: FileText,
       label: "Resume",
+      value: "Download Resume",
       href: "/resume/Vinay_Resume.pdf",
-      bgColor: "#6b21a8",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
+      value: "Connect with me",
       href: "https://www.linkedin.com/in/uppri-vinay-kumar-5b8952295",
-      bgColor: "#0a66c2",
     },
   ];
 
@@ -103,7 +101,7 @@ const ContactSection = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Contact Info + Buttons */}
+          {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -116,11 +114,13 @@ const ContactSection = () => {
                 Contact Information
               </h3>
 
-              <div className="space-y-6">
-                {contactInfo.map((item, index) => (
+              <div className="space-y-4">
+                {contactItems.map((item, index) => (
                   <motion.a
                     key={item.label}
                     href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     initial={{ opacity: 0, x: -20 }}
                     animate={isInView ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
@@ -134,23 +134,6 @@ const ContactSection = () => {
                       <p className="font-medium text-foreground">{item.value}</p>
                     </div>
                   </motion.a>
-                ))}
-              </div>
-
-              {/* Action Buttons: Resume + LinkedIn */}
-              <div className="mt-6 flex flex-wrap justify-center gap-4">
-                {actionButtons.map((button) => (
-                  <a
-                    key={button.label}
-                    href={button.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium text-white hover:opacity-90 transition-opacity"
-                    style={{ backgroundColor: button.bgColor }}
-                  >
-                    <button.icon size={18} />
-                    {button.label}
-                  </a>
                 ))}
               </div>
             </div>
