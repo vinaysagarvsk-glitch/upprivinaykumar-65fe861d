@@ -69,23 +69,27 @@ const ContactSection = () => {
       value: "+91 7670961884",
       href: "tel:+917670961884",
     },
+  ];
+
+  const actionButtons = [
+    {
+      icon: FileText,
+      label: "Resume",
+      href: "/resume/Vinay_Resume.pdf",
+      bgColor: "#6b21a8",
+    },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "Connect with me",
       href: "https://www.linkedin.com/in/uppri-vinay-kumar-5b8952295",
+      bgColor: "#0a66c2",
     },
-    {
-  icon: FileText,
-  label: "Resume",
-  value: "Download Resume",
-  href: "/resume/Vinay_Resume.pdf",
-},
   ];
 
   return (
     <section id="contact" className="section-padding" ref={ref}>
       <div className="container mx-auto">
+        {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -99,7 +103,7 @@ const ContactSection = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Contact Info */}
+          {/* Contact Info + Buttons */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -117,8 +121,6 @@ const ContactSection = () => {
                   <motion.a
                     key={item.label}
                     href={item.href}
-                    target={item.label === "LinkedIn" ? "_blank" : undefined}
-                    rel={item.label === "LinkedIn" ? "noopener noreferrer" : undefined}
                     initial={{ opacity: 0, x: -20 }}
                     animate={isInView ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
@@ -132,6 +134,23 @@ const ContactSection = () => {
                       <p className="font-medium text-foreground">{item.value}</p>
                     </div>
                   </motion.a>
+                ))}
+              </div>
+
+              {/* Action Buttons: Resume + LinkedIn */}
+              <div className="mt-6 flex flex-wrap justify-center gap-4">
+                {actionButtons.map((button) => (
+                  <a
+                    key={button.label}
+                    href={button.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium text-white hover:opacity-90 transition-opacity"
+                    style={{ backgroundColor: button.bgColor }}
+                  >
+                    <button.icon size={18} />
+                    {button.label}
+                  </a>
                 ))}
               </div>
             </div>
