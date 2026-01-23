@@ -74,7 +74,7 @@ const ContactSection = () => {
       icon: FileText,
       label: "Resume",
       value: "Download Resume",
-      href: "/resume/Vinay_Resume.pdf",
+      href: "resume.pdf",
     },
     {
       icon: Linkedin,
