@@ -45,7 +45,7 @@ const HeroSection = () => {
               transition={{ delay: 0.4 }}
               className="text-lg md:text-xl text-muted-foreground mb-6"
             >
-              Digital Marketing & SEO Assistant | BBA Final-Year Student
+              Social Media Associate at JSConnect | Digital Marketing & SEO
             </motion.p>
             
             <motion.p
@@ -54,9 +54,9 @@ const HeroSection = () => {
               transition={{ delay: 0.5 }}
               className="text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed"
             >
-              A motivated BBA final-year student with hands-on internship experience 
-              in SEO and digital marketing. Currently building strong foundations in 
-              keyword research, SEO optimization, and social media marketing.
+              A Social Media Associate at JSConnect, working remotely with hands-on 
+              experience in SEO and digital marketing. Skilled in keyword research, 
+              SEO optimization, and social media marketing.
             </motion.p>
             
             <motion.div
@@ -65,14 +65,14 @@ const HeroSection = () => {
               transition={{ delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
-              <a
+              
                 href="#about"
                 className="inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
               >
                 <User size={18} />
                 View My Profile
               </a>
-              <a
+              
                 href="#contact"
                 className="inline-flex items-center justify-center gap-2 glass px-6 py-3 rounded-lg font-medium hover:bg-secondary transition-colors"
               >
