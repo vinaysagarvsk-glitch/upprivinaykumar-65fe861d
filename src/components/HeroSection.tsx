@@ -65,17 +65,11 @@ const HeroSection = () => {
               transition={{ delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
-              
-                href="#about"
-                className="inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
-              >
+              <a href="#about" className="inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity">
                 <User size={18} />
                 View My Profile
               </a>
-              
-                href="#contact"
-                className="inline-flex items-center justify-center gap-2 glass px-6 py-3 rounded-lg font-medium hover:bg-secondary transition-colors"
-              >
+              <a href="#contact" className="inline-flex items-center justify-center gap-2 glass px-6 py-3 rounded-lg font-medium hover:bg-secondary transition-colors">
                 Contact Me
                 <ArrowRight size={18} />
               </a>
