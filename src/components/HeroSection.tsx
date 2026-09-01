@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, User } from "lucide-react";
-import profileImage from "@/assets/profile.jpg";
+import profileImage from "@/assets/bg less vinay.png";
 
 const HeroSection = () => {
   return (
