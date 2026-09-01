@@ -55,7 +55,7 @@ const HeroSection = () => {
               className="text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed"
             >
               A Social Media Associate at JSConnect, working remotely with hands-on 
-              experience in SEO and digital marketing. Skilled in keyword research, 
+              experience in SMM and digital marketing. Skilled in engagement strategies, 
               SEO optimization, and social media marketing.
             </motion.p>
             
